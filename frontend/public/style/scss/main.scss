@@ -1,0 +1,216 @@
+@import "variables";
+
+body
+{
+    background-color: #f6f6f6;
+    font-family: $mainFont;
+    min-width: 320px;
+    position: relative;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-form
+{
+    max-width: 470px;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    .form-logo
+    {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .title
+    {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .subtitle
+    {
+        font-size: 0.9rem;
+        margin-bottom: 40px;
+    }
+
+    .submit-button
+    {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .icon
+        {
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    .remember-checkbox-container
+    {
+        padding-left: 15px;
+    }
+
+    .login-info
+    {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+.input-container
+{
+    border-radius: 50px;
+    background-color: #fff;
+    border: solid 1px #cccccc;
+    height: 50px;
+    overflow: hidden; /*todo*/
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 40px;
+
+    .form-control
+    {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: calc(100% - 40px);
+        padding: 12px 15px 10px;
+        height: 50px;
+        line-height: 1;
+
+        &:hover,
+        &:focus
+        {
+            outline: none;
+        }
+
+        &::placeholder
+        {
+            color: #afafaf;
+        }
+    }
+
+    .icon
+    {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.main-content-wrapper
+{
+    min-height: calc(100vh - 58px);
+}
+
+.user-list-table
+{
+    border-top: solid 15px $lightColor;
+    background-color: #fff;
+
+    tr
+    {
+        &:nth-child(even)
+        {
+            background-color: #ececec;
+        }
+    }
+
+    td
+    {
+        &:first-child
+        {
+            text-align: right;
+            max-width: 80px; /*todo*/
+        }
+    }
+
+    .user-login
+    {
+        margin-bottom: 5px;
+    }
+
+    .user-name
+    {
+        color: #adadad;
+    }
+
+    .edit-button
+    {
+        margin-bottom: 5px;
+    }
+}
+
+.footer
+{
+    text-align: center;
+    padding: 15px;
+    background-color: #ececec;
+}
+
+.logout-link
+{
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+
+    &:hover
+    {
+        text-decoration: none;
+
+        .icon-logout
+        {
+            transform: translateX(3px);
+        }
+    }
+
+    .icon-logout
+    {
+        margin-right: 5px;
+        transition: .3s;
+        position: relative;
+        top: 7px;
+    }
+}
+
+.pagination
+{
+    text-align: center;
+    padding: 25px 10px 20px;
+
+    .page-item
+    {
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+        transition: .3s;
+        padding: 0 3px;
+
+        &:hover
+        {
+            border-color: $lightColor;
+        }
+    }
+
+    .page-link
+    {
+        color: #333;
+        font-size: 1.3rem;
+        text-decoration: none;
+
+        &:hover
+        {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+body {
+  background-color: #f6f6f6;
+  font-family: "Rubik", sans-serif;
+  min-width: 320px;
+  position: relative;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-form {
+  max-width: 470px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.login-form .form-logo {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.login-form .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.login-form .subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+.login-form .submit-button {
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+}
+.login-form .submit-button .icon {
+  position: relative;
+  top: -2px;
+}
+.login-form .remember-checkbox-container {
+  padding-left: 15px;
+}
+.login-form .login-info {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+.input-container {
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
+  background-color: #fff;
+  border: solid 1px #cccccc;
+  height: 50px;
+  overflow: hidden;
+  /*todo*/
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 40px;
+}
+.input-container .form-control {
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: -webkit-calc(100% - 40px);
+  width: -moz-calc(100% - 40px);
+  width: calc(100% - 40px);
+  padding: 12px 15px 10px;
+  height: 50px;
+  line-height: 1;
+}
+.input-container .form-control:hover, .input-container .form-control:focus {
+  outline: none;
+}
+.input-container .form-control::-webkit-input-placeholder {
+  color: #afafaf;
+}
+.input-container .form-control:-moz-placeholder {
+  color: #afafaf;
+}
+.input-container .form-control::-moz-placeholder {
+  color: #afafaf;
+}
+.input-container .form-control::placeholder {
+  color: #afafaf;
+}
+.input-container .icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main-content-wrapper {
+  min-height: -webkit-calc(100vh - 58px);
+  min-height: -moz-calc(100vh - 58px);
+  min-height: calc(100vh - 58px);
+}
+
+.user-list-table {
+  border-top: solid 15px #ec8e39;
+  background-color: #fff;
+}
+.user-list-table tr:nth-child(even) {
+  background-color: #ececec;
+}
+.user-list-table td:first-child {
+  text-align: right;
+  max-width: 80px;
+  /*todo*/
+}
+.user-list-table .user-login {
+  margin-bottom: 5px;
+}
+.user-list-table .user-name {
+  color: #adadad;
+}
+.user-list-table .edit-button {
+  margin-bottom: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ececec;
+}
+
+.logout-link {
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.logout-link:hover {
+  text-decoration: none;
+}
+.logout-link:hover .icon-logout {
+  -webkit-transform: translateX(3px);
+     -moz-transform: translateX(3px);
+       -o-transform: translateX(3px);
+          transform: translateX(3px);
+}
+.logout-link .icon-logout {
+  margin-right: 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  top: 7px;
+}
+
+.pagination {
+  text-align: center;
+  padding: 25px 10px 20px;
+}
+.pagination .page-item {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0 3px;
+}
+.pagination .page-item:hover {
+  border-color: #ec8e39;
+}
+.pagination .page-link {
+  color: #333;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.pagination .page-link:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

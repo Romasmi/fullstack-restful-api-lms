@@ -1,0 +1,28 @@
+@import "variables";
+
+@mixin font($fontFamily, $folderName, $fileName, $fontStyle, $fontWeight)
+{
+    font-family: $fontFamily;
+    font-display: swap;
+    src: url($pathFromScssToFont + $folderName + '/' + $fileName + '.woff2') format('woff2'),
+    url($pathFromScssToFont + $folderName + '/' + $fileName + '.woff') format('woff'),
+    url($pathFromScssToFont + $folderName +  '/' + $fileName + '.woff') format('svg'),
+    url($pathFromScssToFont + $folderName +  '/' + $fileName + '.ttf') format('truetype');
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+}
+
+@font-face
+{
+    @include font('Rubik', 'Rubik', 'Rubik-Regular', normal, 400);
+}
+
+@font-face
+{
+    @include font('Rubik', 'Rubik', 'Rubik-Medium', normal, 500);
+}
+
+@font-face
+{
+    @include font('Rubik', 'Rubik', 'Rubik-Bold', normal, 700);
+}
