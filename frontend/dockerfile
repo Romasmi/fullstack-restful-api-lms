@@ -1,0 +1,8 @@
+FROM node:alpine
+RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/frontend
+WORKDIR /usr/src/app/frontend
+COPY ./package.json ./
+CMD npm run build
+COPY . .
+CMD npm run prod
