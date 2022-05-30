@@ -6,4 +6,5 @@ COPY ./package.json ./
 CMD npm i
 CMD npm run build
 COPY . .
+CMD npm install -g serve
 CMD npm run prod
