@@ -178,7 +178,9 @@ body {
   transition: 0.3s;
   padding: 0 3px;
 }
-.pagination .page-item:hover {
+.pagination .page-item:hover,
+.pagination .page-item.active
+{
   border-color: #ec8e39;
 }
 .pagination .page-link {

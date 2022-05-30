@@ -195,7 +195,8 @@ body
         transition: .3s;
         padding: 0 3px;
 
-        &:hover
+        &:hover,
+        &.active
         {
             border-color: $lightColor;
         }
