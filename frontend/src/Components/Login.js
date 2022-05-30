@@ -82,7 +82,7 @@ class Login extends React.Component {
                    name="remember" onChange={this.onChangeInput}/>
             Remember me
           </label>
-          {loginStatus && <div>{loginStatus}</div>}
+          {loginStatus && <div className="login-info">{loginStatus}</div>}
           <button type="submit" className="button orange submit-button">
             Log in
             <span className="icon icon-arrow-right"></span>
