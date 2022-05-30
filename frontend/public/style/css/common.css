@@ -53,6 +53,7 @@
 .label .checkbox {
   position: relative;
   top: 1px;
+  margin-right: 5px;
 }
 
 .main-title {

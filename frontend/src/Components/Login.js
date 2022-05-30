@@ -77,7 +77,7 @@ class Login extends React.Component {
             <input className="form-control" type="password" name="password" onChange={this.onChangeInput}
                    placeholder="Password" required/>
           </div>
-          <label className="label">
+          <label className="label remember-checkbox-container">
             <input className="checkbox" type="checkbox"
                    name="remember" onChange={this.onChangeInput}/>
             Remember me
