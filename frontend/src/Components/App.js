@@ -66,8 +66,6 @@ class App extends React.Component {
     const {loggedIn} = this.state
     return (
       <BrowserRouter>
-        <Link to="/">Login</Link>
-        <Link to="/students">Students</Link>
         <Routes>
           <Route path="/" element={loggedIn ? <Navigate to="/students"/> : <Login onUpdateAuth={this.onUpdateAuth}/>}/>
           <Route path="/students" element={!loggedIn ? <Navigate to="/"/> : <Dashboard onLogout={this.onLogout}/>}>
