@@ -2,6 +2,7 @@ import React from "react"
 import {useParams} from "react-router-dom";
 import StudentsList from "./StudentsList"
 import StudentsListPagination from "./StudentsListPagination"
+import {config} from "../config";
 
 function withParams(Component) {
   return props => <Component {...props} params={useParams()}/>;
@@ -25,7 +26,7 @@ class Dashboard extends React.Component {
   }
 
   loadStudents = (page) => {
-    fetch('http://localhost:8000/index.php/users?page=' + page,
+    fetch(config.server + 'index.php/users?page=' + page,
       {
         method: 'GET',
         credentials: "include",

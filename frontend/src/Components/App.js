@@ -2,14 +2,12 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
   Navigate,
-  useNavigate,
-  withRouter
 } from 'react-router-dom'
 import Login from "./Login"
 import Dashboard from "./Dashboard"
-import React, {Fragment} from "react"
+import React from "react"
+import {config} from "../config";
 
 class App extends React.Component {
   state = {
@@ -21,7 +19,7 @@ class App extends React.Component {
   }
 
   checkAuth () {
-    fetch('http://localhost:8000/index.php/auth', {
+    fetch(config.server + 'index.php/auth', {
       credentials: "include",
     })
       .then(response => {
@@ -38,7 +36,7 @@ class App extends React.Component {
 
   onLogout = (event) => {
     event.preventDefault()
-    fetch('http://localhost:8000/index.php/auth',
+    fetch(config.server + 'index.php/auth',
       {
         method: 'DELETE',
         credentials: "include",

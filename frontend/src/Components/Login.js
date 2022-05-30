@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {config} from "../config";
 
 class Login extends React.Component {
   state = {
@@ -13,7 +13,7 @@ class Login extends React.Component {
   onSubmit = (event) => {
     event.preventDefault()
 
-    fetch('http://localhost:8000/index.php/auth',
+    fetch(config.server + 'index.php/auth',
       {
         method: 'POST',
         credentials: "include",
@@ -52,8 +52,7 @@ class Login extends React.Component {
 
   render() {
     const {
-      loginStatus,
-      loggedIn
+      loginStatus
     } = this.state
 
     return (

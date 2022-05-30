@@ -53,9 +53,12 @@ class UserController extends Controller
     #[ArrayShape(['data' => "array", 'code' => "int"])]
     private function onLogoutUser(): array
     {
-        $this->user->clearToken($_SESSION['userId']);
+        if (isset($_SESSION['userId']))
+        {
+            $this->user->clearToken($_SESSION['userId']);
+            unset($_SESSION['userId']);
+        }
         setcookie('token', '', time() - 3600);
-        unset($_SESSION['userId']);
 
         return $this->prepareResponse([
             'status' => 'success'

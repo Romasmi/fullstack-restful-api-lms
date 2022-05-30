@@ -1,6 +1,5 @@
 import React from "react";
-import {Link, Route, BrowserRouter} from "react-router-dom";
-import Students from "./Dashboard";
+import {Link} from "react-router-dom";
 
 class StudentsListPagination extends React.Component {
   state = {
