@@ -9,6 +9,10 @@ Demo [click me](http://62.113.110.97).
 ### `docker-compose up --build`
 Open in browser http://localhost
 
+### Settings
+* Default api url is http://localhost/ and is set in frontend/config.js.
+* Project has global database, credentials is set in backend/config/database.php
+
 ## Test user data
 * Login: lhktbu
 * Password: 16gPSA
