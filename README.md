@@ -23,6 +23,7 @@ Open in browser http://localhost
 * Code refactoring, e.g. add interfaces for classes and 
 update models - add getters/setterrs and save methods;
 * PSR4 autoloader;
+* Add react redux;
 
 
 ## Contact
